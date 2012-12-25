@@ -3,8 +3,7 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-# Copied from https://github.com/technicalpickles/dotpickles/blob/master/home/.bash_profile
-files=$(ls ~/.bash_profile.d/private/*.sh ~/.bash_profile.d/*.sh 2>/dev/null)
+files=$(ls ~/.bash_profile.local.d/*.sh ~/.bash_profile.d/*.sh 2>/dev/null)
 for file in ${files}; do
 	source ${file}
 done
