@@ -39,6 +39,7 @@
   d = diff                          # diff unstaged changes
   dc = diff --cached                # diff staged changes
   last = diff HEAD^                 # diff last committed change
+  dw = diff --ignore-space-change
 
   # log
   l = log --graph --date=short
