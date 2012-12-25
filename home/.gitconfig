@@ -2,9 +2,6 @@
 
 # set your user tokens as enivornment variables, such as ~/.secrets
 # See the README for examples.
-[user]
-  name = Dominique Broeglin
-  email = dominique.broeglin@gmail.com
 [color]
   ui = true
 [color "branch"]
