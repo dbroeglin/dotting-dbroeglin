@@ -56,7 +56,7 @@ hi! Constant guifg=#00BCE0
 hi! Comment guifg=#52737B
 hi! link htmlLink Include
 hi! CursorLine cterm=NONE gui=NONE
-hi! Visual ctermbg=233
+hi! Visual ctermbg=231
 hi! Type gui=bold
 
 
