@@ -1,7 +1,3 @@
-[submodule "KeyBindings"]
-  path = KeyBindings
-  url = https://github.com/ttscoff/KeyBindings.git
-  ignore = dirty
 [submodule "home/.vim/bundle/raimondi-delimitMate"]
   path = home/.vim/bundle/raimondi-delimitMate
   url = https://github.com/Raimondi/delimitMate
