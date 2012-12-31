@@ -1,0 +1,17 @@
+#!/usr/bin/env bake
+
+# Utility script used to check that the environment
+# for my dot files is complete
+
+#. Check dependencies
+deps() {
+  for cmd in ack gem jslint
+  do
+    if command -v "$cmd" 2> /dev/null > /dev/null
+    then
+      bake_ok "$cmd" "was found"
+    else
+      bake_error $cmd "was not found"
+    fi
+  done
+}
