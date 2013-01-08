@@ -7,6 +7,17 @@ alias psj='ps aux | grep java'
 # Moving around
 alias ..='cd ..'
 
+
+case $OSTYPE in
+  darwin*)
+    alias o="open"
+    ;;
+  linux*)
+    alias o="gnome-open"
+    ;;
+esac
+
+
 # Show human friendly numbers and colors
 alias df='df -h'
 alias ll='ls -alGh'
