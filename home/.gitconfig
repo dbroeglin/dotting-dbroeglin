@@ -47,6 +47,7 @@
   short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
   changelog = log --pretty=format:\" * %s\"
   shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
+  lf = log --format=fuller
 
   # pull
   pl = pull                         # pull
