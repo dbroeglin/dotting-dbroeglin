@@ -1,1 +1,1 @@
-export ECLIPSE_HOME=/Users/dom/Applications/eclipse
+export ECLIPSE_HOME=/Users/dom/Application/eclipse
