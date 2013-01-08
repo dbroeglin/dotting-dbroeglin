@@ -1,1 +1,1 @@
-export ECLIPSE_HOME="${HOME}/Application/eclipse"
+export ECLIPSE_HOME="${HOME}/Applications/eclipse"
