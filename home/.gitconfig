@@ -115,5 +115,13 @@
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
   enabled = true
+
+# git-up spefific configuration
+[git-up "rebase"]
+  log-hook = "echo \"changes on $1:\"; git --no-pager log --oneline --decorate $1..$2"
+  arguments = --preserve-merges
+[git-up "fetch"]
+  all = true
+
 [include]
   path = ~/.gitconfig.local
