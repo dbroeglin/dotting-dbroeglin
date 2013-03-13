@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+require 'grit'
+require 'time'
+require 'colored'
+
+include Grit
+
+repo = Repo.new(".")
+#puts repo.branches.map(&:name)
+branches = repo.branches.select do |b| 
+  true # b.name =~ /^(ASKW|bugfix|feature).*/ 
+end.sort_by do |b|
+  b.commit.authored_date
+end
+
+branches.each do |b|
+  puts "-- #{b.name.bold} (#{b.commit.authored_date.to_date.to_s.white}) [#{b.commit.author.to_s.white}]".white
+  commits = repo.commits_between("master", b.name).reverse
+  puts commits.map { |c| [
+    "   *", 
+    c.authored_date.to_date.to_s.blue,
+    c.id_abbrev.yellow, 
+    c.short_message.blue,
+    "[#{c.author}]".magenta
+  ] * " " }
+end
