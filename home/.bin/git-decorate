@@ -7,9 +7,8 @@ require 'colored'
 include Grit
 
 repo = Repo.new(".")
-#puts repo.branches.map(&:name)
 branches = repo.branches.select do |b| 
-  true # b.name =~ /^(ASKW|bugfix|feature).*/ 
+  b.name =~ /^(bugfix|feature).*/ 
 end.sort_by do |b|
   b.commit.authored_date
 end
