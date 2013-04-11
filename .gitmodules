@@ -244,9 +244,6 @@
 [submodule "home/.vim/bundle/tpope-vim-abolish"]
 	path = home/.vim/bundle/tpope-vim-abolish
 	url = https://github.com/tpope/vim-abolish
-[submodule "home/.vim/bundle/bbommarito-vim-slim"]
-	path = home/.vim/bundle/bbommarito-vim-slim
-	url = https://github.com/bbommarito/vim-slim.git
 [submodule "home/.vim/bundle/jtratner-vim-flavored-markdown"]
 	path = home/.vim/bundle/jtratner-vim-flavored-markdown
 	url = https://github.com/jtratner/vim-flavored-markdown.git
