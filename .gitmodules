@@ -187,9 +187,6 @@
 [submodule "home/.vim/bundle/tomtom-tlib_vim"]
 	path = home/.vim/bundle/tomtom-tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
-[submodule "home/.vim/bundle/honza-snipmate-snippets"]
-	path = home/.vim/bundle/honza-snipmate-snippets
-	url = https://github.com/honza/snipmate-snippets.git
 [submodule "home/.vim/bundle/skwp-vim-conque"]
 	path = home/.vim/bundle/skwp-vim-conque
 	url = https://github.com/skwp/vim-conque
