@@ -8,7 +8,7 @@ include Grit
 
 repo = Repo.new(".")
 branches = repo.branches.select do |b| 
-  b.name =~ /^(bugfix|feature).*/ 
+  true # b.name =~ /^(bugfix|feature).*/ 
 end.sort_by do |b|
   b.commit.authored_date
 end
